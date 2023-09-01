@@ -234,7 +234,100 @@ $profiles = [
 					]
 				]
 		],
-	'NorbergP2' => [],
+	'NorbergP2' => [
+        'name' => 'Luke Norberg',
+        'photoPath' => 'NorbergP2me.png',
+        'jobTitle' => 'Software Engineer',
+        'emailAddress' => 'Norbergp2@mymail.nku.edu',
+        'phoneNumber' => '(859) 962-9251',
+        'unameLinkedIn' => 'lukenorberg',
+        'unameGitHub' => 'lukenorberg',
+        'personalWebsite' => 'nku.edu/~NorbergP2',
+        'personalSummary' => 'Applied Software Engineering Major at Northern Kentucky University. Motivated professional focused on continual education through a career and schooling. Accomplished at interpersonal communication and confident with asking for support when needed.',
+        'workExperience' => [
+            [
+                'Title' => 'Research Assistant',
+                'Company' => 'NKU',
+                'YearStart' => 2023,
+                'YearLeave' => 2023,
+                'Description' => 'Adapted an eye-tracking solution to incorporate data visualization tools for easier diagnosis by medical professionals.',
+                'TechUsed' => [
+                    'HTML/CSS',
+                    'PHP',
+                    'JavaScript',
+                    'NodeJS',
+                    'MediaPipe'
+                ]
+            ],
+            [
+                'Title' => 'Customer Service Representative',
+                'Company' => 'Fidelity Investments',
+                'YearStart' => 2022,
+                'YearLeave' => 2023,
+                'Description' => 'Provided stellar customer service utilizing empathy, strong problem-solving skills, and clear communication. Clearly and effectively educated participants on the details of their retirement plans. Navigated resources to provide an end result in a timely manner.',
+                'TechUsed' => [
+                    'OneNote',
+                    'Zoom',
+                    'Proprietary Software'
+                ]
+            ],
+            [
+                'Title' => 'To-go Specialist',
+                'Company' => 'Outback Steakhouse',
+                'YearStart' => 2020,
+                'YearLeave' => 2022,
+                'Description' => 'Anticipated needs, processed guests orders, and took payment in a hospitable, timely manner. Successfully adapted to various business needs, including contributing to multiple positions. Focused on a customer-first mindset by assisting customers over the phones by answering inquiries, taking orders, and resolving complaints.'
+            ],
+        ],
+        'skillsAndTools' => [
+            'JavaScript' => 90,
+            'HTML/CSS' => 90,
+            'Java' => 80,
+            'React' => 75,
+            'Node.js' => 65
+        ],
+        'skillsAndToolsAdditional' => ['Git', 'Tailwind', 'PHP'],
+        'education' => [
+            [
+                'Degree' => 'BS in Applied Software Engineering',
+                'Institution' => 'Northern Kentucky University',
+                'YearStart' => 2023,
+                'YearLeave' => 2026
+            ],
+        ],
+        'awards' => [
+            'John Philip Sousa Award' => '2023',
+            'an award recognizing young musicians for musicality, leadership, and loyalty from school symphonic bands.'
+        ],
+        'languages' => [
+            'English' => 'Native',
+        ],
+        'interests' => [
+            'Musical Performance', 'Road Trips', 'Biblical Scholarship'
+        ],
+        'projects' => [
+            [
+                'ImgPath' => 'NorbergP2search_Music.png',
+                'Name' => 'Music Search Site',
+                'Description' => 'a Music search site built with React and Tailwind that lets user\'s navigate their favorite songs, artists, and albums conveniently using a public music API. This music search site is designed to allow a comfortable UI/UX experience for the user.',
+                'Link' => 'https://github.com/lukenorberg/PersonalProjects/tree/main/Music%20Search',
+                'LinkText' => 'View Project'
+            ],
+            [
+                'ImgPath' => 'NorbergP2Rate_Your_Music_Logo.jpg',
+                'Name' => 'RateYourMusic.com Web Scraper',
+                'Description' => 'Extracted and analyzed music data from RateYourMusic.com using Beautiful Soup and Pandas. Scraped website data to gather information such as scores and genre tags, and used Pandas to organize and categorize the data. The resulting insights were used to gain a deeper understanding of music trends and preferences.',
+                'Link' => 'https://github.com/lukenorberg/PersonalProjects/tree/main/RYM_Web_Scraper',
+                'LinkText' => 'View Project'
+            ],
+            [
+                'ImgPath' => 'NorbergP2Pcalculator.png',
+                'Name' => 'Calculator',
+                'Description' => 'Developed a calculator application using HTML, CSS, and JavaScript. Implemented user-friendly interface using HTML and CSS, and programmed the calculator\'s functions and logic using JavaScript. The application was designed to perform basic mathematical operations and was built with scalability and flexibility in mind.',
+                'Link' => 'https://github.com/lukenorberg/PersonalProjects/tree/main/Calculator',
+                'LinkText' => 'View Project'
+            ]
+        ]],
 	'RileyS14' => []
 ];
 
