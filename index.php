@@ -277,7 +277,8 @@ $profiles = [
                 'Company' => 'Outback Steakhouse',
                 'YearStart' => 2020,
                 'YearLeave' => 2022,
-                'Description' => 'Anticipated needs, processed guests orders, and took payment in a hospitable, timely manner. Successfully adapted to various business needs, including contributing to multiple positions. Focused on a customer-first mindset by assisting customers over the phones by answering inquiries, taking orders, and resolving complaints.'
+                'Description' => 'Anticipated needs, processed guests orders, and took payment in a hospitable, timely manner. Successfully adapted to various business needs, including contributing to multiple positions. Focused on a customer-first mindset by assisting customers over the phones by answering inquiries, taking orders, and resolving complaints.',
+                'TechUsed' => ['Proprietary Software']
             ],
         ],
         'skillsAndTools' => [
@@ -297,8 +298,7 @@ $profiles = [
             ],
         ],
         'awards' => [
-            'John Philip Sousa Award' => '2023',
-            'an award recognizing young musicians for musicality, leadership, and loyalty from school symphonic bands.'
+            'John Philip Sousa Award' => '2022',
         ],
         'languages' => [
             'English' => 'Native',
