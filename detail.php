@@ -321,7 +321,7 @@ $profiles = [
                 'LinkText' => 'View Project'
             ],
             [
-                'ImgPath' => 'NorbergP2Pcalculator.png',
+                'ImgPath' => 'NorbergP2calculator.png',
                 'Name' => 'Calculator',
                 'Description' => 'Developed a calculator application using HTML, CSS, and JavaScript. Implemented user-friendly interface using HTML and CSS, and programmed the calculator\'s functions and logic using JavaScript. The application was designed to perform basic mathematical operations and was built with scalability and flexibility in mind.',
                 'Link' => 'https://github.com/lukenorberg/PersonalProjects/tree/main/Calculator',
@@ -330,7 +330,6 @@ $profiles = [
         ]],
 	'RileyS14' => []
 ];
-
 ?>
 
 <?php
