@@ -328,7 +328,117 @@ $profiles = [
                 'LinkText' => 'View Project'
             ]
         ]],
-	'RileyS14' => []
+        'Rileys14' =>
+        [
+            'name'				=> 'Sarah Riley',
+            'photoPath'			=> 'SarahRileyProfile.png',
+            'jobTitle'			=> 'Software Engineer Student',
+            'emailAddress'		=> 'Rileys14@mymail.nku.edu',
+            'phoneNumber'		=> '(989) 387-3686',
+            'unameLinkedIn'		=> 'sarah-riley-33a429241',
+            'unameGitHub'		=> 'Sarahphoo',
+            'personalWebsite'	=> 'nku.edu/~rileys14',
+            'personalSummary'	=>
+                'I am a student currently studying Applied Software Engineering at, Northern Kentucky University. During the course of my academic career, I managed to accrue 1 semester of database management, 2 semesters of Java experience, and 2 semesters of web development. During this time, I had the privilege of working for Newport Aquarium in the Guest Experiance role, where I learned valuable professional skills such as team work, client needs assessment, and client communications. ',
+            'workExperience'	=>
+                [
+                    [	'Title'			=> 'Software Engineer',
+                        'Company'		=> 'DatFlo',
+                        'YearStart'		=> 2023,
+                        'YearLeave'		=> null,
+                        'Description'	=> 'Role description goes here ipsum dolor sit amet, consectetuer adipiscing
+                        elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                        penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+                        quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec
+                        pede justo, fringilla vel.',
+
+                        'TechUsed'		=> ['Meta Business Suite','Photoshop']
+                    ],
+                    [	'Title'			=> 'Web Developer',
+                        'Company'		=> 'Pokemon Company',
+                        'YearStart'		=> 2022,
+                        'YearLeave'		=> 2023,
+                        'Description'	=> 'Role description goes here ipsum dolor sit amet, consectetuer adipiscing
+                        elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                        penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+                        quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec
+                        pede justo, fringilla vel.',
+
+                        'TechUsed'		=> ['Wordpress','SNO','PHP','JavaScript']
+                    ],
+                    [	'Title'			=> 'Junior Sortware Engineer',
+                        'Company'		=> 'The Nothing Company',
+                        'YearStart'		=> 2020,
+                        'YearLeave'		=> 2022,
+                        'Description'	=> 'Role description goes here ipsum dolor sit amet, consectetuer adipiscing
+                        elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                        penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+                        quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec
+                        pede justo, fringilla vel.',
+
+                        'TechUsed'		=> ['Wordpress','SNO','PHP','JavaScript']
+
+                    ],
+                    [	'Title'			=> 'Software Engineer Intern',
+                        'Company'		=> 'Source Toad',
+                        'YearStart'		=> 2019,
+                        'YearLeave'		=> 2020,
+                        'Description'	=> 'Role description goes here ipsum dolor sit amet, consectetuer adipiscing
+                        elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                        penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+                        quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec
+                        pede justo, fringilla vel.',
+
+                        'AchieveBullets'=> ['Maintained the organization\'s roster.','Tracked weekly meeting attendance.','Recorded and distributed weekly meeting minutes.'],
+                        'TechUsed'		=> ['PHP','JavaScript','Docker', 'YII2']
+                    ]
+   
+                ],
+            'skillsAndTools' =>
+                [	'HTML' => 95,
+                    'Java' => 90,
+                    'JavaScript'=> 70,
+                    'PHP'=> 20,
+                    'BASH' => 85,
+                    'Powershell' => 10
+                ],
+            'skillsAndToolsAdditional' => ['CSS','Javascript','PHP'],
+            'education' =>
+                [
+                    [	'Degree'		=> 'BS in Applied Software Engineering',
+                        'Institution'	=> 'Northern Kentucky University',
+                        'YearStart'		=> 2019,
+                        'YearLeave'		=> 2024
+                    ],
+                    [	'Degree'		=> 'High School Diploma',
+                        'Institution'	=> 'Ogemaw Heights High school',
+                        'YearStart'		=> 2012,
+                        'YearLeave'		=> 2016
+                    ]
+                ],
+            'awards' =>
+                [	'Cutest Dog' => '2023'
+                ],
+            'languages' =>
+                [	'English' => 'Native',
+                    'Spanish' => 'Limited Working Proficiency'
+                ],
+            'interests' =>
+                [	'Software Engineering',
+                    'Web Development',
+                    'Digital Art',
+                    'Artificial Intelligence'
+                ],
+            'projects' =>
+                [
+                    [	'ImgPath'		=> 'Rileys14_PetLog.png',
+                        'Name'			=> 'PetLog',
+                        'Description'	=> 'A project made with the help of other students from ASE220',
+                        'Link'			=> 'https://github.com/Saraphoo/Assignment7_Final',
+                        'LinkText'		=> 'View the Code'
+                    ]
+                ]
+        ]
 ];
 ?>
 
