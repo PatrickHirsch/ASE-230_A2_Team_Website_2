@@ -50,8 +50,15 @@ function teamMemberCard($profile, $index)
         echo '<h1 class="name mt-0 mb-1 text-white text-uppercase text-uppercase">'.$profile['name'].'</h1>';
     }
     if (isset($profile['jobTitle'])) {
-        echo '<div class="title mb-3">'.$profile['jobTitle'].'</div>';
+        echo '<div class="title mb-1">'.$profile['jobTitle'].'</div>';
     }
+
+
+    // placeholder for Patrick
+
+    echo '<div class="title mb-3">' . 'Birthday' . '</div>';
+
+
     echo '
 								<a href="detail.php?profile='.$index.'" class="btn btn-secondary">See full profile</a>
 						    </div><!--//primary-info-->
