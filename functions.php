@@ -31,4 +31,10 @@ function getLinkedLink($username,$protocol=False)
 {	return getProfileLink($username,'LinkedIn',$protocol);
 }
 
+//
+function calculateDuration($startDate,$endDate=null)
+{	if($endDate==null)	$endDate = new DateTime("now");;
+	$duration = $startDate->diff($endDate);
+	return (int)$duration->format('%Y');
+}
 ?>
