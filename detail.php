@@ -59,10 +59,16 @@ $thisProfile=$profiles[$profile];
 								<h1 class="name mt-0 mb-1 text-white text-uppercase text-uppercase">
 									<?= htmlspecialchars($thisProfile['name']); ?>
 								</h1>
-								<div class="title mb-3">
+								<div class="title mb-1">
 									<?= htmlspecialchars($thisProfile['jobTitle']) ?>
 								</div>
 								<ul class="list-unstyled">
+									<?php if (array_key_exists('dateOfBirth', $thisProfile)): ?>
+										<li class="mb-2"><i
+													class="far fa-calendar fa-fw me-2" data-fa-transform="grow-3"></i>
+												<?= calculateDuration($thisProfile['dateOfBirth']).' Years Old' ?>
+											</li>
+									<?php endif ?>
 									<?php if ($thisProfile['emailAddress'] !== null): ?>
 										<li class="mb-2"><a class="text-link"
 												href="mailto:<?= htmlspecialchars($thisProfile['emailAddress']); ?>"><i
@@ -78,7 +84,7 @@ $thisProfile=$profiles[$profile];
 											</a></li>
 									<?php endif ?>
 								</ul>
-							</div><!--//primary-info-->
+							</div>
 							<div class="secondary-info col-auto mt-2">
 								<ul class="resume-social list-unstyled">
 									<?php if ($thisProfile['unameLinkedIn'] !== null): ?>
