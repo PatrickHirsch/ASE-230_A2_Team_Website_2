@@ -31,7 +31,8 @@ function getLinkedLink($username,$protocol=False)
 {	return getProfileLink($username,'LinkedIn',$protocol);
 }
 
-//
+// Function to take 1-2 DateTime objects and return their difference in years as an int.
+// If only one parameter is passed, second defaults to current time.
 function calculateDuration($startDate,$endDate=null)
 {	if($endDate==null)	$endDate = new DateTime("now");;
 	$duration = $startDate->diff($endDate);
