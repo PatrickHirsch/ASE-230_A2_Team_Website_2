@@ -137,7 +137,7 @@ $thisProfile=$profiles[$profile];
 							</h2>
 							<div class="resume-section-content">
 								<div class="resume-timeline position-relative">
-								<?php displayWorkExp($profile);?>
+								<?php displayWorkExp($thisProfile);?>
 								</div><!--//resume-timeline-->
 							</div>
 						</section><!--//projects-section-->
