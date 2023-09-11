@@ -39,7 +39,7 @@ function getLinkedLink($username, $protocol = False)
 }
 
 //displays each work experience item on the detail page. The function accepts one work experience item as a parameter, and it must display the code for the work experience filled with the employment information.
-function displayWorkExp($profile, $item)
+function displayWorkExp($profile)
 {
 	foreach ($profile['workExperience'] as $item) {
 		echo '<article class="resume-timeline-item position-relative pb-5">
