@@ -77,4 +77,77 @@ function teamMemberCard($profile, $index)
 		    </header>';
 }
 
+//displays each work experience item on the detail page. The function accepts one work experience item as a parameter, and it must display the code for the work experience filled with the employment information.
+function displayWorkExp($profile)
+{
+	foreach ($profile['workExperience'] as $item) {
+		echo '<article class="resume-timeline-item position-relative pb-5">
+			<div class="resume-timeline-item-header mb-2">
+				<div class="d-flex flex-column flex-md-row">
+					<h3 class="resume-position-title font-weight-bold mb-1">
+						' . htmlspecialchars($item['Title']) . '
+					</h3>
+					<div class="resume-company-name ms-auto">
+					' . htmlspecialchars($item['Company']) . '
+					</div>
+				</div><!--//row-->
+				<div class="resume-position-time">
+				' . htmlspecialchars(stringifyRange($item['YearStart'], $item['YearLeave'])) . '
+				</div>
+			</div><!--//resume-timeline-item-header-->
+			<div class="resume-timeline-item-desc">';
+		if (array_key_exists('Description', $item)) {
+			echo '
+					<p>
+						' . htmlspecialchars($item['Description']) . '
+					</p>';
+		}
+		if (array_key_exists('Achievements', $item)) {
+			echo '
+					<h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements:
+					</h4>
+					<p>
+						' . htmlspecialchars($item['Achievements']) . '
+					</p>';
+		}
+		if (array_key_exists('AchieveBullets', $item)) {
+			echo '
+					<ul>';
+			foreach ($item['AchieveBullets'] as $bullet) {
+				echo '
+							<li>
+								' . htmlspecialchars($bullet) . '
+							</li>';
+			}
+			;
+			echo '
+					</ul>';
+		}
+		if (array_key_exists('TechUsed', $item)) {
+			echo '
+					<h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies
+						used:</h4>
+					<ul class="list-inline">
+						';
+			foreach ($item["TechUsed"] as $bullet) {
+				echo '
+							<li class="list-inline-item"><span
+									class="badge bg-secondary badge-pill">
+									' . htmlspecialchars($bullet) . '
+								</span></li>';
+			}
+			;
+			echo '
+					</ul>';
+		}
+		echo '
+				</div><!--//resume-timeline-item-desc-->
+				</article><!--//resume-timeline-item-->
+				';
+	}
+
+}
+
+
+
 ?>

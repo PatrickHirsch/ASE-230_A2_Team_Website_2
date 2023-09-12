@@ -137,58 +137,7 @@ $thisProfile=$profiles[$profile];
 							</h2>
 							<div class="resume-section-content">
 								<div class="resume-timeline position-relative">
-									<?php foreach ($thisProfile['workExperience'] as $item): ?>
-										<article class="resume-timeline-item position-relative pb-5">
-											<div class="resume-timeline-item-header mb-2">
-												<div class="d-flex flex-column flex-md-row">
-													<h3 class="resume-position-title font-weight-bold mb-1">
-														<?= htmlspecialchars($item['Title']) ?>
-													</h3>
-													<div class="resume-company-name ms-auto">
-														<?= htmlspecialchars($item['Company']) ?>
-													</div>
-												</div><!--//row-->
-												<div class="resume-position-time">
-													<?= htmlspecialchars(stringifyRange($item['YearStart'], $item['YearLeave'])) ?>
-												</div>
-											</div><!--//resume-timeline-item-header-->
-											<div class="resume-timeline-item-desc">
-												<?php if (array_key_exists('Description', $item)): ?>
-													<p>
-														<?= htmlspecialchars($item['Description']) ?>
-													</p>
-												<?php endif ?>
-												<?php if (array_key_exists('Achievements', $item)): ?>
-													<h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements:
-													</h4>
-													<p>
-														<?= htmlspecialchars($item['Achievements']) ?>
-													</p>
-												<?php endif ?>
-												<?php if (array_key_exists('AchieveBullets', $item)): ?>
-													<ul>
-														<?php foreach ($item['AchieveBullets'] as $bullet): ?>
-															<li>
-																<?= htmlspecialchars($bullet) ?>
-															</li>
-														<?php endforeach ?>
-													</ul>
-												<?php endif ?>
-												<?php if (array_key_exists('TechUsed', $item)): ?>
-													<h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies
-														used:</h4>
-													<ul class="list-inline">
-														<?php foreach ($item["TechUsed"] as $bullet): ?>
-															<li class="list-inline-item"><span
-																	class="badge bg-secondary badge-pill">
-																	<?= htmlspecialchars($bullet) ?>
-																</span></li>
-														<?php endforeach ?>
-													</ul>
-												<?php endif ?>
-											</div><!--//resume-timeline-item-desc-->
-										</article><!--//resume-timeline-item-->
-									<?php endforeach ?>
+									<?php displayWorkExp($thisProfile);?>
 								</div><!--//resume-timeline-->
 							</div>
 						</section><!--//projects-section-->
