@@ -1,9 +1,11 @@
 <?php
+require_once('data.php');
+require_once('functions.php');
 // INSERT DATA HERE.
 // Variable declarations, $profiles is an associative array with keys defining user ids, values are associative arrays, the format of which can be seen in the sample entry below
 // NOTE: All variables are, before being inserted into the HTML document, sanitized via a htmlspecialchars() function.  All Strings should print as they are typed.
 
-$profiles = [
+//$profiles = [
 //	'test' =>
 //		[	//	The following are simple variables taking a single string.
 //			'name'				=> 'Sam Poole',	// User's name as meant to be printed.  Used in the page title, header, and footer.
@@ -117,7 +119,7 @@ $profiles = [
 //					]
 //				]
 //		],
-    'HirschP2' =>
+    /*'HirschP2' =>
         [
             'name'				=> 'Patrick Hirsch',
             'photoPath'			=> 'HirschP2.jpg',
@@ -440,7 +442,13 @@ $profiles = [
                     ]
                 ]
         ]
-];
+];*/
+
+//changeToJson($profiles);
+
+$profile= json_decode(readUserData());
+
+
 
 $keys = array_keys($profiles);
 // variable of names for the end of the page

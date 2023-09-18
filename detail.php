@@ -1,6 +1,7 @@
 <?php
 require_once('data.php');
 require_once('functions.php');
+$profile= json_decode(readUserData());
 
 //Interpret profile specified in URL, assign it to $profile variable if it is defined in $profiles array, otherwise: print appropriate error and die.
 if (array_key_exists('profile', $_GET)) {

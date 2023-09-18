@@ -39,7 +39,7 @@ function getLinkedLink($username, $protocol = False)
 }
 
 //displays each work experience item on the detail page. The function accepts one work experience item as a parameter, and it must display the code for the work experience filled with the employment information.
-function displayWorkExp($profile)
+function displayWorkExp(array $profile): void
 {
 	foreach ($profile['workExperience'] as $item) {
 		echo '<article class="resume-timeline-item position-relative pb-5">
@@ -108,5 +108,18 @@ function displayWorkExp($profile)
 	}
 
 }
+
+//function changeToJson($contents){
+//	$newJson = json_encode($contents,JSON_PRETTY_PRINT);
+//	file_put_contents('userData.json', $newJson);
+//
+//}
+
+function readUserData(){
+	$userData = fopen('userData.json','r');
+	fread($userData,filesize('userData.json'));
+	fclose($userData);
+}
+
 
 ?>
